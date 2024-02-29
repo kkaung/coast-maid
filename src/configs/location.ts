@@ -1,9 +1,9 @@
 export const locations = [
     {
-        title: 'Perth',
+        title: 'Gold Coast',
         meta: {},
-        items: [{ title: 'Burwood', slug: 'burwood' }],
+        items: [{ title: 'Broadbeach', slug: 'broadbeach' }],
     },
 ];
 
-export const cities = ['Perth'];
+export const cities = ['Gold Coast'];

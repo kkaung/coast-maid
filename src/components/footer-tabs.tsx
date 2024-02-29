@@ -1,13 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
-import { ScrollArea } from './ui/scroll-area';
 import { cn } from '@/lib/utils';
 import { locations } from '@/configs/location';
+import { ScrollArea } from './ui/scroll-area';
 import { Collapsible, CollapsibleTrigger } from './ui/collapsible';
-import Link from 'next/link';
-import { siteConfig } from '@/configs/site';
 
 export default function FooterTabs() {
     const [tab, setTab] = useState(0);
