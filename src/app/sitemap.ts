@@ -21,10 +21,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const routes = [
         '',
         '/cleaning-services',
-        '/pricing',
         '/house-cleaning-pricing-gold-coast',
         '/blog',
-        '/booking',
         '/frequently-asked-questions',
         '/house-cleaning-checklist',
 
