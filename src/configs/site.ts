@@ -138,7 +138,7 @@ export const siteConfig = {
         },
     ] satisfies FooterItem[],
     business: {
-        email: 'contact@moreclean.com.au',
+        email: 'contact@coastmaid.com.au',
         phone: '1302 245 417',
         address: '401/249 George St, 2017 NSW',
         openingHour: 'Mon – Sun: 9:00 AM – 5:00 PM',
