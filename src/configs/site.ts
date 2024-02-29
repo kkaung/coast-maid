@@ -4,12 +4,12 @@ import type { FooterItem, MainNavItem } from '@/types';
 export type SiteConfig = typeof siteConfig;
 
 const links = {
-    facebook: 'https://www.linkedin.com/company/',
-    instagram: 'https://instagram.com/',
-    twitter: 'https://twitter.com/',
-    pinterest: 'https://www.pinterest.com.au/',
-    linkin: 'https://www.linkedin.com/company/',
-    youtube: 'https://www.youtube.com/channel/',
+    facebook: 'https://www.facebook.com/people/Coast-Maid/61556988147072/',
+    instagram: 'https://instagram.com/coastmaid',
+    twitter: 'https://twitter.com/coastmaid',
+    pinterest: 'https://www.pinterest.com.au/coastmaid',
+    linkin: 'https://www.linkedin.com/company/coast-maid',
+    youtube: 'https://www.youtube.com/@CoastMaid',
     googlemap: '',
 
     buynsw: 'https://buy.nsw.gov.au/supplier/profile',
@@ -67,7 +67,7 @@ export const siteConfig = {
         },
         {
             title: 'Pricing',
-            href: '/house-cleaning-pricing-sydney',
+            href: '/house-cleaning-pricing-gold-coast',
         },
     ] satisfies MainNavItem[],
     links,
