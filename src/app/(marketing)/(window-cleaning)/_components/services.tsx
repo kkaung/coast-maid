@@ -1,6 +1,5 @@
 import React, { type HTMLAttributes } from 'react';
 import { headingVariants } from '@/components/page-header';
-import { siteConfig } from '@/configs/site';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import AfterBuilderCleanImage from '/public/assets/images/after-builder-cleaning.png';
@@ -18,6 +17,8 @@ import { items } from '@/configs/service';
 interface ServicesProps extends HTMLAttributes<HTMLElement> {}
 
 export default function Services({ ...props }: ServicesProps) {
+    const filteredItems = items.filter(i => i.title !== 'Window Cleaning');
+
     return (
         <section
             id="services"
@@ -25,9 +26,9 @@ export default function Services({ ...props }: ServicesProps) {
             className={cn(props.className)}
             {...props}
         >
-            <h2 className={headingVariants({})}>Cleaning Services</h2>
+            <h2 className={headingVariants({})}>Other Cleaning Services</h2>
             <ul className="mt-6 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                {items.map(i => {
+                {filteredItems.map(i => {
                     const ImageSrc = getImageSrc(i.image);
 
                     return (

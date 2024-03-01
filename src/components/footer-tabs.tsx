@@ -12,6 +12,8 @@ export default function FooterTabs() {
     const [tab, setTab] = useState(0);
     const [isOpen, setIsOpen] = React.useState(false);
 
+    console.log(locations);
+
     const tabs = [
         {
             title: 'Gold Coast',
@@ -68,7 +70,7 @@ export default function FooterTabs() {
                                         {l.items.map(i => (
                                             <li key={i.title}>
                                                 <Link
-                                                    href={`/bond-cleaning-${l.title.toLowerCase()}/${
+                                                    href={`/house-cleaning-${l.title.toLowerCase()}/${
                                                         i.slug
                                                     }`}
                                                     title={`House Cleaning Service In ${i.title}`}

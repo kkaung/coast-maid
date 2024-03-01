@@ -53,7 +53,7 @@ export default function Features({ ...props }: FeaturesProps) {
         >
             <div className="space-y-1">
                 <p className="text-pink-500 uppercase font-medium">
-                    Why {siteConfig.name}
+                    Why Choose {siteConfig.name}
                 </p>
                 <h2 className={headingVariants({})}>
                     More Than Just A Cleaning Service

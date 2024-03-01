@@ -21,7 +21,7 @@ export default function Content({ city, suburb, segments }: ContentProps) {
                 <Breadcrumbs segments={segments} dottable={false} />
                 <PageHeader>
                     <PageHeaderHeading>
-                        Top Quality Cleaning Services in Sydney
+                        Top Quality Cleaning Services in Gold Coast
                     </PageHeaderHeading>
                     <PageHeaderDescription>
                         We&apos;re not just cleaners, we&apos;re

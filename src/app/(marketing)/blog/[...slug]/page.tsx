@@ -228,7 +228,7 @@ export default async function PostPage({ params }: PostPageProps) {
                 <ul className="grid grid-cols-1 gap-x-4 gap-y-2 text-sm">
                     <li>
                         <Link
-                            href="/deep-cleaning-golc-coast"
+                            href="/deep-cleaning-gold-coast"
                             title="Deep Cleaning Service In Gold Coast"
                         >
                             Deep Cleaning
@@ -244,8 +244,8 @@ export default async function PostPage({ params }: PostPageProps) {
                     </li>
                     <li>
                         <Link
-                            href="/end-of-lease-cleaning-gold-coast"
-                            title="End Of Lease Cleaning Service In Gold Coast"
+                            href="/bond-cleaning-gold-coast"
+                            title="Bond Cleaning Service In Gold Coast"
                         >
                             End Of Lease Cleaning
                         </Link>
@@ -284,7 +284,7 @@ export default async function PostPage({ params }: PostPageProps) {
                     </li>
                     <li>
                         <Link
-                            href="/builder-cleaning-gold-coast"
+                            href="/after-builder-cleaning-gold-coast"
                             title="Post Construction Cleaning Service In Gold Coast"
                         >
                             Construction Cleaning

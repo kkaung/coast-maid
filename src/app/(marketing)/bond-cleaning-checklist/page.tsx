@@ -37,7 +37,7 @@ export default function Page() {
             />
             <PageHeader className="text-center">
                 <PageHeaderHeading>
-                    End Of Lease & Bond Cleaning Checklist
+                    End Of Lease - Bond Cleaning Checklist Gold Coast
                 </PageHeaderHeading>
             </PageHeader>
             <Checklist />
