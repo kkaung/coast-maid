@@ -1,8 +1,9 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import Dot from '@/components/dot';
 import { notFound } from 'next/navigation';
 import { type Author, allAuthors, allPosts } from 'contentlayer/generated';
 import { Mdx } from '@/components/mdx/mdx-components';
-import Image from 'next/image';
-import Link from 'next/link';
 import { type Metadata } from 'next';
 import { env } from '@/env.mjs';
 import { absoluteUrl, cn, formatDate } from '@/lib/utils';
@@ -13,9 +14,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { headingVariants } from '@/components/page-header';
 import { Breadcrumbs } from '@/components/pagers/breadcrumbs';
 import { getPathname } from '@/lib/next';
-import { cities } from '@/configs/location';
-
-import Dot from '@/components/dot';
 import { siteConfig } from '@/configs/site';
 
 interface PostPageProps {
@@ -200,7 +198,9 @@ export default async function PostPage({ params }: PostPageProps) {
                         </div>
                     </CardHeader>
                     <CardContent className="space-y-4 text-foreground">
-                        <p className="text-foreground">{author.description}</p>
+                        <p className="text-foreground text-sm">
+                            {author.description}
+                        </p>
                         <div className="flex gap-4">
                             <Link
                                 aria-label="Linkin"
@@ -221,49 +221,81 @@ export default async function PostPage({ params }: PostPageProps) {
                     <h3 className="font-semibold text-lg">{siteConfig.name}</h3>
                     <p className="text-sm">
                         {siteConfig.name} is a top-rated house cleaning company
-                        in Sydney. We offer tailored cleaning services for your
-                        homes, apartments and offices.
+                        in Gold Coast. We offer tailored cleaning services for
+                        your homes, apartments and offices.
                     </p>
                 </div>
                 <ul className="grid grid-cols-1 gap-x-4 gap-y-2 text-sm">
                     <li>
                         <Link
-                            href="/deep-cleaning-sydney"
-                            title="Deep Cleaning Service In Sydney"
+                            href="/deep-cleaning-golc-coast"
+                            title="Deep Cleaning Service In Gold Coast"
                         >
                             Deep Cleaning
                         </Link>
                     </li>
                     <li>
                         <Link
-                            href="/regular-cleaning-sydney"
-                            title="Regular Cleaning Service In Sydney"
+                            href="/regular-cleaning-gold-coast"
+                            title="Regular Cleaning Service In Gold Coast"
                         >
                             Regular Cleaning
                         </Link>
                     </li>
                     <li>
                         <Link
-                            href="/end-of-lease-cleaning-sydney"
-                            title="End Of Lease Cleaning Service In Sydney"
+                            href="/end-of-lease-cleaning-gold-coast"
+                            title="End Of Lease Cleaning Service In Gold Coast"
                         >
                             End Of Lease Cleaning
                         </Link>
                     </li>
                     <li>
                         <Link
-                            href="/end-of-lease-cleaning-sydney"
-                            title="End Of Lease Cleaning Service In Sydney"
+                            href="/office-cleaning-gold-coast"
+                            title="Office Cleaning Service In Gold Coast"
                         >
                             Office Cleaning
                         </Link>
                     </li>
                     <li>
                         <Link
-                            href="/end-of-lease-cleaning-sydney"
-                            title="End Of Lease Cleaning Service In Sydney"
+                            href="/oven-cleaning-gold-coast"
+                            title="Oven Cleaning Service In Gold Coast"
                         >
                             Oven Cleaning
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/carpet-cleaning-gold-coast"
+                            title="Carpet Cleaning Service In Gold Coast"
+                        >
+                            Carpet Cleaning
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/window-cleaning-gold-coast"
+                            title="Window Cleaning Service In Gold Coast"
+                        >
+                            Window Cleaning
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/builder-cleaning-gold-coast"
+                            title="Post Construction Cleaning Service In Gold Coast"
+                        >
+                            Construction Cleaning
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/airbnb-cleaning-gold-coast"
+                            title="Airbnb Cleaning Service In Gold Coast"
+                        >
+                            Airbnb Cleaning
                         </Link>
                     </li>
                 </ul>

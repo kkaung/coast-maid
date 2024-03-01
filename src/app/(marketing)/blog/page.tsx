@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-    PageHeader,
-    PageHeaderDescription,
-    PageHeaderHeading,
-} from '@/components/page-header';
+import { PageHeader, PageHeaderHeading } from '@/components/page-header';
 import { Breadcrumbs } from '@/components/pagers/breadcrumbs';
 import { Shell } from '@/components/shell';
 import { siteConfig } from '@/configs/site';
