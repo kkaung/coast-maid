@@ -22,8 +22,8 @@ export default function Page() {
             segments={[
                 { title: 'Home', href: '/' },
                 {
-                    title: 'Builder Cleaning',
-                    href: '/builder-cleaning-gold-coast',
+                    title: 'After Builder Cleaning',
+                    href: '/after-builder-cleaning-gold-coast',
                 },
             ]}
         />

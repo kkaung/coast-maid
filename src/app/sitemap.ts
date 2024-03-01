@@ -26,14 +26,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/frequently-asked-questions',
         '/house-cleaning-checklist',
 
-        '/end-of-lease-cleaning-gold-coast',
+        '/bond-cleaning-gold-coast',
         '/deep-cleaning-gold-coast',
         '/regular-cleaning-gold-coast',
         '/office-cleaning-gold-coast',
         '/oven-cleaning-gold-coast',
         '/carpet-cleaning-gold-coast',
         '/window-cleaning-gold-coast',
-        '/builder-cleaning-gold-coast',
+        '/after-builder-cleaning-gold-coast',
         '/airbnb-cleaning-gold-coast',
     ].map(route => ({
         url: absoluteUrl(route),

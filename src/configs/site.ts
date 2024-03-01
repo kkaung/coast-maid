@@ -12,7 +12,6 @@ const links = {
     youtube: 'https://www.youtube.com/@CoastMaid',
     googlemap: '',
 
-    buynsw: 'https://buy.nsw.gov.au/supplier/profile',
     yelp: 'https://www.yelp.com/biz/',
 };
 
@@ -36,8 +35,8 @@ export const siteConfig = {
                     href: '/regular-cleaning-gold-coast',
                 },
                 {
-                    title: 'End Of Lease Cleaning',
-                    href: '/end-of-lease-cleaning-gold-coast',
+                    title: 'Bond Cleaning',
+                    href: '/bond-cleaning-gold-coast',
                 },
                 {
                     title: 'Office Cleaning',
@@ -56,8 +55,8 @@ export const siteConfig = {
                     href: '/window-cleaning-gold-coast',
                 },
                 {
-                    title: 'Builder Cleaning',
-                    href: '/builder-cleaning-gold-coast',
+                    title: 'After Builder Cleaning',
+                    href: '/after-builder-cleaning-gold-coast',
                 },
                 {
                     title: 'Airbnb Cleaning',
@@ -84,8 +83,8 @@ export const siteConfig = {
                     href: '/regular-cleaning-gold-coast',
                 },
                 {
-                    title: 'End Of Lease Cleaning',
-                    href: '/end-of-lease-cleaning-gold-coast',
+                    title: 'Bond Cleaning',
+                    href: '/bond-cleaning-gold-coast',
                 },
                 {
                     title: 'Office Cleaning',
@@ -104,8 +103,8 @@ export const siteConfig = {
                     href: '/window-cleaning-gold-coast',
                 },
                 {
-                    title: 'Builder Cleaning',
-                    href: '/builder-cleaning-gold-coast',
+                    title: 'After Builder Cleaning',
+                    href: '/after-builder-cleaning-gold-coast',
                 },
                 {
                     title: 'Airbnb Cleaning',
@@ -140,7 +139,7 @@ export const siteConfig = {
     business: {
         email: 'contact@coastmaid.com.au',
         phone: '1302 245 417',
-        address: '401/249 George St, 2017 NSW',
+        address: '10 Rowes St, 4217 Queensland',
         openingHour: 'Mon – Sun: 9:00 AM – 5:00 PM',
     },
     rating: {
