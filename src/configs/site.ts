@@ -13,6 +13,7 @@ const links = {
     googlemap: '',
 
     yelp: 'https://www.yelp.com/biz/',
+    westmaid: 'https://westmaid.com.au/'
 };
 
 export const siteConfig = {

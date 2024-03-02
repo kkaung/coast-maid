@@ -175,6 +175,12 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                         >
                             <Icons.yelp aria-hidden className="h-4 w-4" />
                         </Link>
+                        <Link
+                            href={siteConfig.links.westmaid}
+                            title="WestMaid - House Cleaning Service Perth"
+                        >
+                            <Icons.sparkles aria-hidden className="h-4 w-4" />
+                        </Link>
                     </div>
                 </section>
             </Shell>

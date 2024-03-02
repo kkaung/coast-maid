@@ -12,8 +12,6 @@ export default function FooterTabs() {
     const [tab, setTab] = useState(0);
     const [isOpen, setIsOpen] = React.useState(false);
 
-    console.log(locations);
-
     const tabs = [
         {
             title: 'Gold Coast',

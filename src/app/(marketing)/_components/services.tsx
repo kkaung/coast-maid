@@ -1,6 +1,5 @@
 import React, { type HTMLAttributes } from 'react';
 import { headingVariants } from '@/components/page-header';
-import { siteConfig } from '@/configs/site';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import AfterBuilderCleanImage from '/public/assets/images/after-builder-cleaning.png';
