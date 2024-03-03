@@ -34,7 +34,7 @@ const items = [
     },
     {
         title: 'Across Gold Coast',
-        content: `We’ve got vetted end lease cleaners across Gold Coast, ready to help get you on the move.`,
+        content: `We’ve got insured & vetted house cleaners across Gold Coast, ready to help get you in getting your home sparkling clean.`,
     },
     {
         title: 'No Hidden Fees',
