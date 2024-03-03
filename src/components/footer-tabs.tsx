@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
-import { cn } from '@/lib/utils';
+import { cn, toTitleCase, unslugify } from '@/lib/utils';
 import { locations } from '@/configs/location';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { ScrollArea } from './ui/scroll-area';
 import { Collapsible, CollapsibleTrigger } from './ui/collapsible';
 
@@ -14,15 +14,19 @@ export default function FooterTabs() {
 
     const tabs = [
         {
-            title: 'Gold Coast',
-            value: 'gold-coast',
+            title: 'House',
+            value: 'house',
+        },
+        {
+            title: 'Bond',
+            value: 'bond',
         },
     ];
 
     return (
         <section>
             <Tabs
-                defaultValue="gold-coast"
+                defaultValue="house"
                 className="relative mt-6 w-full size-full overflow-auto"
             >
                 <ScrollArea
@@ -68,10 +72,12 @@ export default function FooterTabs() {
                                         {l.items.map(i => (
                                             <li key={i.title}>
                                                 <Link
-                                                    href={`/house-cleaning-${l.title.toLowerCase()}/${
-                                                        i.slug
-                                                    }`}
-                                                    title={`House Cleaning Service In ${i.title}`}
+                                                    href={`/${l.href}-${i.slug}`}
+                                                    title={`${toTitleCase(
+                                                        unslugify(l.href)
+                                                    )} ${toTitleCase(
+                                                        unslugify(i.slug)
+                                                    )}`}
                                                     className="text-sm text-muted-foreground"
                                                 >
                                                     {i.title}

@@ -9,7 +9,7 @@ const getReviews = (location: string) => {
     return [
         {
             name: 'Emily',
-            body: 'RZ Cleaning Team did a great job on our apartment. Everything was spotless and we got 100% of our bond back. I would definitely recommend them for End of Lease cleaning.',
+            body: 'Coast Maid Team did a great job on our apartment. Everything was spotless and we got 100% of our bond back. I would definitely recommend them for End of Lease cleaning.',
         },
         {
             name: 'Dora',

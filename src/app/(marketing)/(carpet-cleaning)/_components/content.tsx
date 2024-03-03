@@ -1,6 +1,8 @@
 import { Shell } from '@/components/shell';
 import { Breadcrumbs } from '@/components/pagers/breadcrumbs';
 import React from 'react';
+import About from '@/components/about';
+import Commitment from '@/components/commitment';
 
 import Hero from './hero';
 import FAQs from './faqs';
@@ -8,8 +10,6 @@ import Features from './features';
 import Reviews from './reviews';
 
 import LatestBlog from '../../_components/latest-blog';
-import About from '../../_components/about';
-import Commitment from '@/components/commitment';
 import Services from './services';
 
 interface ContentProps {

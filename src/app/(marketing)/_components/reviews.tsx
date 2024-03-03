@@ -9,7 +9,7 @@ const getReviews = (location: string) => {
     return [
         {
             name: 'Emily',
-            body: 'More Clean Team did a great job on our apartment. Everything was spotless and we got 100% of our bond back. I would definitely recommend them for End of Lease cleaning.',
+            body: 'Coast Maid Team did a great job on our apartment. Everything was spotless and we got 100% of our bond back. I would definitely recommend them for End of Lease cleaning.',
         },
         {
             name: 'Dora',
@@ -21,7 +21,7 @@ const getReviews = (location: string) => {
         },
         {
             name: 'Jessie W',
-            body: 'We booked the service for our end of lease cleaning and I couldn’t be happier. The flat is spotless and the service was amazing including the customer service before and after the cleaning. I will totally recommend RZ Cleaning.',
+            body: 'We booked the service for our end of lease cleaning and I couldn’t be happier. The flat is spotless and the service was amazing including the customer service before and after the cleaning. I will totally recommend Coast Maid.',
         },
         {
             name: 'Kelly',
@@ -41,15 +41,15 @@ const getReviews = (location: string) => {
         },
         {
             name: 'Melanie',
-            body: `I've used RZ Cleaning twice for bond cleaning, and on both occasions they have been very open and communicative. The cleaning met all my expectations and would recommend them.`,
+            body: `I've used Coast Maid twice for house cleaning, and on both occasions they have been very open and communicative. The cleaning met all my expectations and would recommend them.`,
         },
         {
             name: 'Sarah',
-            body: `Vivi and Robin did an amazing job cleaning the apartment for my end of lease. They were super helpful and responsive and sent a lot of photos after cleaning to ensure satisfaction.`,
+            body: `Vivi and Robin did an amazing job cleaning the apartment for 2 beth room cleaning. They were super helpful and responsive and sent a lot of photos after cleaning to ensure satisfaction.`,
         },
         {
             name: 'Peter M',
-            body: `I have used many cleaning companies over the years and RZ Cleaning is the best I have found in ${location} for exit clean.`,
+            body: `I have used many cleaning companies over the years and Coast Maid is the best I have found in ${location} for exit clean.`,
         },
         {
             name: 'Dean',
