@@ -25,6 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/blog',
         '/frequently-asked-questions',
         '/house-cleaning-checklist',
+        '/sitemap',
 
         '/bond-cleaning-gold-coast',
         '/deep-cleaning-gold-coast',
