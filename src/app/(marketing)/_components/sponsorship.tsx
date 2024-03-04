@@ -1,6 +1,4 @@
-import { siteConfig } from '@/configs/site';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
 import React, { type HTMLAttributes } from 'react';
 
 interface SponsorshipProps extends HTMLAttributes<HTMLElement> {}

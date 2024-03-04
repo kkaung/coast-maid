@@ -104,7 +104,7 @@ export default async function PostPage({ params }: PostPageProps) {
     ) as Author;
 
     return (
-        <section className="container relative max-w-3xl py-6 lg:py-10">
+        <article className="container relative max-w-3xl py-6 lg:py-10">
             <Link
                 href="/blog"
                 className={cn(
@@ -317,6 +317,6 @@ export default async function PostPage({ params }: PostPageProps) {
                     See all posts
                 </Link>
             </div>
-        </section>
+        </article>
     );
 }
