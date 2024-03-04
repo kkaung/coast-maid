@@ -47,13 +47,17 @@ export default function LatestBlog({ ...props }: LatestBlogProps) {
                                     <Link
                                         href={`/blog/${post.slugAsParams}`}
                                         className="absolute inset-0"
+                                        title={`${post.title}`}
                                     >
                                         <span className="sr-only">
                                             View Blog Post
                                         </span>
                                     </Link>
                                 </AspectRatio>
-                                <Link href={`/blog/${post.slugAsParams}`}>
+                                <Link
+                                    href={`/blog/${post.slugAsParams}`}
+                                    title={`${post.title}`}
+                                >
                                     <h4 className="font-semibold text-lg leading-tight hover:underline">
                                         {post.title}
                                     </h4>

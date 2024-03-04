@@ -13,7 +13,7 @@ const links = {
     googlemap: '',
 
     yelp: 'https://www.yelp.com/biz/',
-    westmaid: 'https://westmaid.com.au/'
+    westmaid: 'https://westmaid.com.au/',
 };
 
 export const siteConfig = {
@@ -134,6 +134,7 @@ export const siteConfig = {
             items: [
                 { title: 'About Us', href: '/about' },
                 { title: 'Careers', href: '/careers' },
+                { title: 'Sitemap', href: '/sitemap' },
             ],
         },
     ] satisfies FooterItem[],
