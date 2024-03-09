@@ -36,7 +36,7 @@ export default function Page() {
                         {allPages.map(i => (
                             <li key={i.title}>
                                 <Link
-                                    href={`/${i.slug}`}
+                                    href={`/house-cleaning-${i.slug}`}
                                     className="hover:underline"
                                     title={`${i.title}`}
                                 >

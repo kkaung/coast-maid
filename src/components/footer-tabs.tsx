@@ -21,6 +21,14 @@ export default function FooterTabs() {
             title: 'Bond',
             value: 'bond',
         },
+        {
+            title: 'Office',
+            value: 'office',
+        },
+        {
+            title: 'Carpet',
+            value: 'carpet',
+        },
     ];
 
     return (

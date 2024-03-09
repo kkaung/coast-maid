@@ -102,6 +102,20 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                     </section>
                 </section>
                 <FooterTabs />
+                <section className="sr-only">
+                    <div>
+                        Looking for professional house cleaner in Perth?
+                        <Link
+                            href={siteConfig.links.westmaid}
+                            title="WestMaid - House Cleaning Service Perth"
+                        >
+                            WestMaid
+                        </Link>
+                        the top-rated cleaning service in Perth, ensures
+                        pristine cleanliness and satisfaction in every corner of
+                        your home.
+                    </div>
+                </section>
                 <section
                     id="footer-bottom"
                     aria-labelledby="footer-bottom-heading"
@@ -174,12 +188,6 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                             title="Yelp"
                         >
                             <Icons.yelp aria-hidden className="h-4 w-4" />
-                        </Link>
-                        <Link
-                            href={siteConfig.links.westmaid}
-                            title="WestMaid - House Cleaning Service Perth"
-                        >
-                            <Icons.sparkles aria-hidden className="h-4 w-4" />
                         </Link>
                     </div>
                 </section>
