@@ -1,7 +1,5 @@
-import { size } from '@/app/icon';
 import {
     PageHeader,
-    PageHeaderDescription,
     PageHeaderHeading,
     headingVariants,
 } from '@/components/page-header';
@@ -111,6 +109,42 @@ export default function Page() {
                                     href={`/${i.slug}`}
                                     className="hover:underline"
                                     title={`House Cleaner ${i.title}`}
+                                >
+                                    {i.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+                <section className="space-y-4">
+                    <h2 className={cn(headingVariants({ size: 'sm' }))}>
+                        Office Cleaning
+                    </h2>
+                    <ul>
+                        {locations[0].items.map(i => (
+                            <li key={i.title}>
+                                <Link
+                                    href={`/office-cleaning-${i.slug}`}
+                                    className="hover:underline"
+                                    title={`House Cleaner ${i.title}`}
+                                >
+                                    {i.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+                <section className="space-y-4">
+                    <h2 className={cn(headingVariants({ size: 'sm' }))}>
+                        Carpet Cleaning
+                    </h2>
+                    <ul>
+                        {locations[0].items.map(i => (
+                            <li key={i.title}>
+                                <Link
+                                    href={`/carpet-cleaning-${i.slug}`}
+                                    className="hover:underline"
+                                    title={`Carpet Cleaner ${i.title}`}
                                 >
                                     {i.title}
                                 </Link>

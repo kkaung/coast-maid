@@ -109,9 +109,9 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                             href={siteConfig.links.westmaid}
                             title="WestMaid - House Cleaning Service Perth"
                         >
-                            WestMaid
+                            WestMaid&apos;s House Cleaning Perth
                         </Link>
-                        the top-rated cleaning service in Perth, ensures
+                        ,the top-rated cleaning service in Perth, ensures
                         pristine cleanliness and satisfaction in every corner of
                         your home.
                     </div>
