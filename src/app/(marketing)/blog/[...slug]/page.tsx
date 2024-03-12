@@ -243,7 +243,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/deep-cleaning-gold-coast"
-                                title="Deep Cleaning Service In Gold Coast"
+                                title="Deep Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Deep Cleaning
                             </Link>
@@ -251,7 +252,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/regular-cleaning-gold-coast"
-                                title="Regular Cleaning Service In Gold Coast"
+                                title="Regular Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Regular Cleaning
                             </Link>
@@ -259,7 +261,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/bond-cleaning-gold-coast"
-                                title="Bond Cleaning Service In Gold Coast"
+                                title="Bond Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 End Of Lease Cleaning
                             </Link>
@@ -267,7 +270,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/office-cleaning-gold-coast"
-                                title="Office Cleaning Service In Gold Coast"
+                                title="Office Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Office Cleaning
                             </Link>
@@ -275,7 +279,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/oven-cleaning-gold-coast"
-                                title="Oven Cleaning Service In Gold Coast"
+                                title="Oven Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Oven Cleaning
                             </Link>
@@ -283,7 +288,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/carpet-cleaning-gold-coast"
-                                title="Carpet Cleaning Service In Gold Coast"
+                                title="Carpet Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Carpet Cleaning
                             </Link>
@@ -291,7 +297,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/window-cleaning-gold-coast"
-                                title="Window Cleaning Service In Gold Coast"
+                                title="Window Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Window Cleaning
                             </Link>
@@ -299,7 +306,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/after-builder-cleaning-gold-coast"
-                                title="Post Construction Cleaning Service In Gold Coast"
+                                title="Post Construction Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Construction Cleaning
                             </Link>
@@ -307,7 +315,8 @@ export default async function PostPage({ params }: PostPageProps) {
                         <li>
                             <Link
                                 href="/airbnb-cleaning-gold-coast"
-                                title="Airbnb Cleaning Service In Gold Coast"
+                                title="Airbnb Cleaning Service Gold Coast"
+                                className="hover:underline"
                             >
                                 Airbnb Cleaning
                             </Link>
