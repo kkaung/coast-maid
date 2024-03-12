@@ -52,11 +52,11 @@ export default function Page() {
             </Shell>
             <OrganizationJsonLd
                 useAppDir
-                id={absoluteUrl('')}
-                name={siteConfig.title}
+                id={absoluteUrl('/')}
+                name={`${siteConfig.name} | Professional Cleaning Service Gold Coast`}
                 description={siteConfig.description}
                 legalName={siteConfig.name}
-                url={absoluteUrl('')}
+                url={absoluteUrl('/')}
                 logo={absoluteUrl('/')}
                 sameAs={[
                     siteConfig.links.facebook,
@@ -64,13 +64,24 @@ export default function Page() {
                     siteConfig.links.instagram,
                     siteConfig.links.twitter,
                     siteConfig.links.youtube,
+                    siteConfig.links.pinterest,
                 ]}
                 address={{
-                    streetAddress: '401 / 249 George St',
-                    addressLocality: 'Waterloo',
-                    addressRegion: 'NSW',
-                    postalCode: '2017',
+                    streetAddress: '10 Rowes St',
+                    addressLocality: 'Gold Coast',
+                    addressRegion: 'QLD',
+                    postalCode: '4217',
                     addressCountry: 'AU',
+                }}
+            />
+            <BrandJsonLd
+                useAppDir
+                id={absoluteUrl('/')}
+                aggregateRating={{
+                    bestRating: 5,
+                    worstRating: 1,
+                    ratingCount: siteConfig.rating.ratingCount,
+                    ratingValue: siteConfig.rating.ratingValue,
                 }}
             />
             <BreadcrumbJsonLd
