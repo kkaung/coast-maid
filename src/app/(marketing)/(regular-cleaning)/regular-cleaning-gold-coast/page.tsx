@@ -22,7 +22,7 @@ export default function Page() {
                 { title: 'Home', href: '/' },
                 {
                     title: 'Regular Cleaning',
-                    href: '/regular-cleaning-sydney',
+                    href: '/regular-cleaning-gold-coast',
                 },
             ]}
         />

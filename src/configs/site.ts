@@ -116,7 +116,6 @@ export const siteConfig = {
         {
             title: 'Useful Links',
             items: [
-                { title: 'Services', href: '/cleaning-services' },
                 { title: 'Contact Us', href: '/contact' },
                 { title: 'Blog', href: '/blog' },
                 {
