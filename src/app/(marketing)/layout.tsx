@@ -1,11 +1,12 @@
 import { type PropsWithChildren } from 'react';
 import { SiteHeader } from '@/components/layouts/site-header';
 import SiteFooter from '@/components/layouts/site-footer';
-import { BrandJsonLd } from 'next-seo';
-import { siteConfig } from '@/configs/site';
-import { absoluteUrl } from '@/lib/utils';
+
+import { OrganizationSchema } from '@/lib/dts-schema';
 
 export default async function Layout({ children }: PropsWithChildren) {
+    const jsonLd = OrganizationSchema;
+
     return (
         <>
             <div className="relative h-full flex min-h-screen flex-col">
@@ -13,7 +14,10 @@ export default async function Layout({ children }: PropsWithChildren) {
                 <main className="flex-1">{children}</main>
                 <SiteFooter />
             </div>
-
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
         </>
     );
 }

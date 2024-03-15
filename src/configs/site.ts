@@ -19,7 +19,7 @@ const links = {
 export const siteConfig = {
     logo: 'CoastMaid',
     name: 'Coast Maid',
-    title: `Gold Coast's Premium House Cleaning Serivce | Coast Maid`,
+    title: `Coast Maid - Cleaning Serivce Gold Coast`,
     description: `Our top-rated cleaning services come with a 200% satisfaction guarantee. We deliver sparkling results you'll love with our professional cleaners. Book online in 60 seconds!`,
     url: 'https://coastmaid.com.au',
     ogImage: 'https://coastmaid.com.au/opengraph-image.png',
@@ -145,8 +145,8 @@ export const siteConfig = {
         openingHour: 'Mon – Sun: 9:00 AM – 5:00 PM',
     },
     rating: {
-        ratingValue: '4.9',
-        ratingCount: '727',
+        ratingValue: 4.9,
+        ratingCount: 727,
     },
 };
 
