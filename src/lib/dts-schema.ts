@@ -1,10 +1,16 @@
 import { siteConfig } from '@/configs/site';
-import { Organization, Product } from 'schema-dts';
+import type { Graph, Organization, Product, WebSite } from 'schema-dts';
+import { absoluteUrl } from './utils';
+import { getPathname } from './next';
+
+const pathname = getPathname();
 
 export const OrganizationSchema: Organization = {
     '@type': 'Organization',
     name: siteConfig.title,
     description: siteConfig.description,
+    logo: absoluteUrl('/images/logo.png'),
+    url: absoluteUrl(pathname),
     email: siteConfig.business.email,
     telephone: siteConfig.business.phone,
     address: siteConfig.business.address,
@@ -15,6 +21,13 @@ export const OrganizationSchema: Organization = {
         siteConfig.links.pinterest,
         siteConfig.links.youtube,
     ],
+};
+
+export const ProductSchema: Product = {
+    '@type': 'Product',
+    name: siteConfig.title,
+    description: siteConfig.description,
+    image: absoluteUrl('/images/logo.png'),
     brand: {
         '@type': 'Brand',
         name: siteConfig.name,
@@ -28,6 +41,14 @@ export const OrganizationSchema: Organization = {
     },
 };
 
-export const ProductSchema: Product = {
-    '@type': 'Product',
+export const WebSiteSchema: WebSite = {
+    '@type': 'WebSite',
+    name: siteConfig.title,
+    description: siteConfig.description,
+    inLanguage: 'en-GB',
+};
+
+export const graphSchemas: Graph = {
+    '@context': 'https://schema.org',
+    '@graph': [OrganizationSchema, WebSiteSchema],
 };

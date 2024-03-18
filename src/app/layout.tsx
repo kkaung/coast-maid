@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     keywords: [],
     authors: [],
-    creator: 'rzcleaning_au',
+    creator: 'westmaidperth',
     openGraph: {
         type: 'website',
         locale: 'en_US',
@@ -37,10 +37,17 @@ export const metadata: Metadata = {
         title: siteConfig.name,
         description: siteConfig.description,
         images: [`${siteConfig.url}/og.jpg`],
-        creator: '@rzcleaning_au',
+        creator: '@westmaidperth',
     },
     icons: {
         icon: '/favicon.ico',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
     },
 };
 

@@ -1,5 +1,5 @@
-import { type Metadata } from 'next';
 import { Shell } from '@/components/shell';
+import { type Metadata } from 'next';
 import React from 'react';
 import Hero from './_components/hero';
 import HowWork from './_components/how-work';
@@ -9,10 +9,8 @@ import Checklist from './_components/checklist';
 import Features from './_components/features';
 import Gurantee from './_components/gurantee';
 import LatestBlog from './_components/latest-blog';
-import { absoluteUrl } from '@/lib/utils';
-import { siteConfig } from '@/configs/site';
-import Commitment from '@/components/commitment';
 import Services from './_components/services';
+import Commitment from '@/components/commitment';
 import About from '@/components/about';
 
 import Featuring from './_components/featuring';
