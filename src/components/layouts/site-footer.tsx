@@ -28,7 +28,10 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                             href="/"
                             className="text-2xl italic flex items-center space-x-2"
                         >
-                            <span className="font-bold">{siteConfig.logo}</span>
+                            <span className="font-bold">
+                                Coast Maid - <br />
+                                Cleaning Service Gold Coast
+                            </span>
                         </Link>
                         <p className="my-4 max-w-xs text-xs md:text-sm">
                             We transform Gold Coast homes from chaotic havens

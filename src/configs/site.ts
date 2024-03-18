@@ -131,7 +131,7 @@ export const siteConfig = {
         {
             title: 'Company',
             items: [
-                { title: 'About Us', href: '/about' },
+                { title: 'About Us', href: '/about-us' },
                 { title: 'Careers', href: '/careers' },
                 { title: 'Sitemap', href: '/sitemap' },
             ],

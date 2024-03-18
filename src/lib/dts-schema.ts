@@ -50,5 +50,5 @@ export const WebSiteSchema: WebSite = {
 
 export const graphSchemas: Graph = {
     '@context': 'https://schema.org',
-    '@graph': [OrganizationSchema, WebSiteSchema],
+    '@graph': [OrganizationSchema, WebSiteSchema, ProductSchema],
 };

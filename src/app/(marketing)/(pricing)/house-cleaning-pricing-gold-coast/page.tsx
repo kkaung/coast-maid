@@ -25,7 +25,6 @@ import FAQs from '../_components/faqs';
 import Link from 'next/link';
 import { Icons } from '@/components/icons';
 import { formatDate } from '@/lib/utils';
-import { ArticleJsonLd } from 'next-seo';
 
 export const runtime = 'edge';
 
@@ -93,6 +92,35 @@ export default function Page() {
                         </time>
                     </PageHeaderDescription>
                 </PageHeader>
+                <div className="mx-auto prose prose-quoteless prose-neutral dark:prose-invert">
+                    <p>
+                        Coast Maid provides a range of high-quality cleaning
+                        services, from house cleaning to{' '}
+                        <Link href="/office-cleaning-gold-coast">
+                            office cleaning
+                        </Link>
+                        ,{' '}
+                        <Link href="/bond-cleaning-gold-coast">
+                            end of lease cleaning
+                        </Link>{' '}
+                        and{' '}
+                        <Link href="/carpet-cleaning-gold-coast">
+                            carpet cleaning
+                        </Link>
+                        . We cater to homes throughout Gold Coast, offering
+                        top-notch cleaning solutions at affordable prices,
+                        ensuring accessibility to the best cleaners in the city
+                        for all.
+                    </p>
+                    <p>
+                        This guide unveils the secrets to sparkling spaces
+                        without the shocking bill. From hourly rates to flat
+                        fees, discover the perfect cleaning solution for your
+                        home and budget. Breathe easy knowing you&apos;re
+                        getting expert service without the stress of hidden
+                        fees.
+                    </p>
+                </div>
                 <section className="broder max-w-xl mx-auto w-full">
                     <Table>
                         <TableCaption>A list of cleaning prices.</TableCaption>
