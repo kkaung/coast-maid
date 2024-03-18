@@ -2,15 +2,16 @@ import { siteConfig } from '@/configs/site';
 import type { Graph, Organization, Product, WebSite } from 'schema-dts';
 import { absoluteUrl } from './utils';
 import { getPathname } from './next';
+import { usePathname } from 'next/navigation';
 
-const pathname = getPathname();
+// const pathname = getPathname();
 
 export const OrganizationSchema: Organization = {
     '@type': 'Organization',
     name: siteConfig.title,
     description: siteConfig.description,
     logo: absoluteUrl('/images/logo.png'),
-    url: absoluteUrl(pathname),
+    // url: absoluteUrl(pathname),
     email: siteConfig.business.email,
     telephone: siteConfig.business.phone,
     address: siteConfig.business.address,
