@@ -15,7 +15,6 @@ import { headingVariants } from '@/components/page-header';
 import { Breadcrumbs } from '@/components/pagers/breadcrumbs';
 import { getPathname } from '@/lib/next';
 import { siteConfig } from '@/configs/site';
-import { NewsArticleJsonLd } from 'next-seo';
 
 interface PostPageProps {
     params: {
