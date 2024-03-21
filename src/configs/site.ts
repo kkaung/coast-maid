@@ -14,6 +14,7 @@ const links = {
 
     yelp: 'https://www.yelp.com/biz/',
     westmaid: 'https://westmaid.com.au/',
+    topcleaner: 'https://topcleanercanberra.com.au/',
 };
 
 export const siteConfig = {
@@ -144,7 +145,7 @@ export const siteConfig = {
         openingHour: 'Mon – Sun: 9:00 AM – 5:00 PM',
     },
     rating: {
-        ratingValue: 4.9,
+        ratingValue: '4.9',
         ratingCount: 727,
     },
 };

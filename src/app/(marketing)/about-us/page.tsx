@@ -15,6 +15,9 @@ export const runtime = 'edge';
 export const metadata: Metadata = {
     title: `About Us - ${siteConfig.name}`,
     description: `Join us on our journey to revolutionize the cleaning industry! Get acquainted with our dedicated field and office staff members, and learn about the inception of ${siteConfig.name}.`,
+    alternates: {
+        canonical: '/about-us',
+    },
 };
 
 export default function page() {
@@ -29,7 +32,7 @@ export default function page() {
             />
             <PageHeader className="mx-auto">
                 <PageHeaderHeading>{siteConfig.name} Story</PageHeaderHeading>
-                <PageHeaderDescription>
+                <PageHeaderDescription className="mx-auto">
                     Turning houses into homes.
                 </PageHeaderDescription>
             </PageHeader>

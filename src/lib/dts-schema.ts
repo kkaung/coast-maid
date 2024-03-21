@@ -1,17 +1,16 @@
 import { siteConfig } from '@/configs/site';
 import type { Graph, Organization, Product, WebSite } from 'schema-dts';
 import { absoluteUrl } from './utils';
-import { getPathname } from './next';
-import { usePathname } from 'next/navigation';
 
-// const pathname = getPathname();
+const isBrowser = typeof window !== 'undefined';
+
 
 export const OrganizationSchema: Organization = {
     '@type': 'Organization',
     name: siteConfig.title,
     description: siteConfig.description,
     logo: absoluteUrl('/images/logo.png'),
-    // url: absoluteUrl(pathname),
+    ...(isBrowser && { url: absoluteUrl(window.location.pathname) }),
     email: siteConfig.business.email,
     telephone: siteConfig.business.phone,
     address: siteConfig.business.address,
@@ -35,8 +34,8 @@ export const ProductSchema: Product = {
     },
     aggregateRating: {
         '@type': 'AggregateRating',
-        bestRating: 5,
-        worstRating: 1,
+        bestRating: '5',
+        worstRating: '1',
         ratingValue: siteConfig.rating.ratingValue,
         ratingCount: siteConfig.rating.ratingCount,
     },

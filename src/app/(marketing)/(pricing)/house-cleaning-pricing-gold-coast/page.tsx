@@ -20,17 +20,20 @@ import { Metadata } from 'next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Author, allAuthors } from 'contentlayer/generated';
-
-import FAQs from '../_components/faqs';
 import Link from 'next/link';
 import { Icons } from '@/components/icons';
 import { formatDate } from '@/lib/utils';
+
+import FAQs from '../_components/faqs';
 
 export const runtime = 'edge';
 
 export const metadata: Metadata = {
     title: 'House Cleaning Prices In Gold Coast',
     description: `Get crystal clear pricing on Gold Coast's top-rated house cleaning services. Find the perfect fit for your budget and needs, with options from weekly refreshes to deep dives.`,
+    alternates: {
+        canonical: '/house-cleaning-pricing-brisbane',
+    },
 };
 
 const pricingList = [
@@ -96,15 +99,15 @@ export default function Page() {
                     <p>
                         Coast Maid provides a range of high-quality cleaning
                         services, from house cleaning to{' '}
-                        <Link href="/office-cleaning-gold-coast">
+                        <Link href="/office-cleaning-brisbane">
                             office cleaning
                         </Link>
                         ,{' '}
-                        <Link href="/bond-cleaning-gold-coast">
+                        <Link href="/bond-cleaning-brisbane">
                             end of lease cleaning
                         </Link>{' '}
                         and{' '}
-                        <Link href="/carpet-cleaning-gold-coast">
+                        <Link href="/carpet-cleaning-brisbane">
                             carpet cleaning
                         </Link>
                         . We cater to homes throughout Gold Coast, offering
