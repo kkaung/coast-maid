@@ -25,15 +25,19 @@ const SiteHeader = ({ ...props }: SiteHeaderProps) => {
                         mainNavItems={siteConfig.mainNav}
                         sidebarNavItems={siteConfig.mainNav}
                     />
-                    <Link
-                        aria-label="Home"
-                        href="/"
-                        title={`${siteConfig.name} - House Cleaning Service Gold Coast`}
-                    >
-                        <span className="font-extrabold text-2xl italic text-primary">
+                    <div className="relative">
+                        <div className="text-2xl italic flex items-center space-x-2 font-bold">
                             {siteConfig.logo}
-                        </span>
-                    </Link>
+                        </div>
+                        <Link
+                            aria-label="Home"
+                            href="/"
+                            className="inset-0 absolute"
+                            title={siteConfig.title}
+                        >
+                            <span className="sr-only">{siteConfig.title}</span>
+                        </Link>
+                    </div>
                 </div>
                 <nav className="flex lg:flex-1 gap-4 items-center justify-between">
                     <MainNav items={siteConfig.mainNav} />

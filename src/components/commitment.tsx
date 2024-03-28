@@ -26,7 +26,7 @@ export default function Commitment({ ...props }: CommitmentProps) {
             </p>
             <div>
                 <Link
-                    href="/book-now"
+                    href="/booking"
                     className={cn(buttonVariants({ size: 'lg' }))}
                 >
                     Book Now

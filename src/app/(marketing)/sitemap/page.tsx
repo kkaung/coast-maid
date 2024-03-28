@@ -9,8 +9,18 @@ import { locations } from '@/configs/location';
 import { siteConfig } from '@/configs/site';
 import { cn } from '@/lib/utils';
 import { allPages, allPosts } from 'contentlayer/generated';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
+
+export const metadata: Metadata = {
+    title: 'Sitemap',
+    description:
+        'The sitemap provides an overview of all the pages on a website in an easy-to-read format for users and search engines. It helps visitors navigate the site structure and find desired content quickly.',
+    alternates: {
+        canonical: '/sitemap',
+    },
+};
 
 export default function Page() {
     return (

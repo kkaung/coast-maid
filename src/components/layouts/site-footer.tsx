@@ -23,16 +23,21 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                         aria-labelledby="footer-branding-heading"
                         className="w-full lg:max-w-sm"
                     >
-                        <Link
-                            aria-label="Home"
-                            href="/"
-                            className="text-2xl italic flex items-center space-x-2"
-                        >
-                            <span className="font-bold">
-                                Coast Maid - <br />
-                                Cleaning Service Gold Coast
-                            </span>
-                        </Link>
+                        <div className="relative">
+                            <div className="text-2xl italic flex items-center space-x-2 font-bold">
+                                {siteConfig.logo}
+                            </div>
+                            <Link
+                                aria-label="Home"
+                                href="/"
+                                className="inset-0 absolute"
+                                title={siteConfig.title}
+                            >
+                                <span className="sr-only">
+                                    {siteConfig.title}
+                                </span>
+                            </Link>
+                        </div>
                         <p className="my-4 max-w-xs text-xs md:text-sm">
                             We transform Gold Coast homes from chaotic havens
                             into sparkling sanctuaries, all while respecting the
@@ -120,9 +125,12 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                     </div>
                     <div>
                         Ready to transform your home with professional cleaning?
-                        Contact <Link href={siteConfig.links.topcleaner}>Top Cleaner Canberra</Link> for a free
-                        quote and enjoy peace of mind knowing your Canberra home
-                        is in good hands!
+                        Contact{' '}
+                        <Link href={siteConfig.links.topcleaner}>
+                            Top Cleaner Canberra
+                        </Link>{' '}
+                        for a free quote and enjoy peace of mind knowing your
+                        Canberra home is in good hands!
                     </div>
                 </section>
                 <section

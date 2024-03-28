@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'House Cleaning Prices In Gold Coast',
     description: `Get crystal clear pricing on Gold Coast's top-rated house cleaning services. Find the perfect fit for your budget and needs, with options from weekly refreshes to deep dives.`,
     alternates: {
-        canonical: '/house-cleaning-pricing-brisbane',
+        canonical: '/house-cleaning-pricing-gold-coast',
     },
 };
 
